@@ -1,0 +1,110 @@
+body {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  height: 100vh;
+}
+.container {
+  -ms-scroll-chaining: none;
+      overscroll-behavior: none;
+  width: 400%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.panel.align-top {
+  align-items: flex-start;
+}
+
+.blue {
+  background-color: #f1edea;
+}
+
+
+html, body {
+  margin: 0;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+  font-family: "Signika Negative", sans-serif, Arial;
+}
+
+.panel {
+	width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  position: relative;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+h1, h2, p, li {
+  max-width: 800px;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  border-bottom-right-radius: 26px;
+  z-index: 100;
+  background-color: rgba(0,0,0,0.5);
+  will-change: transform;
+}
+
+/* HEADINGS */
+.header-section {
+
+  text-align: center;
+}
+
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+
+.intro{
+  height: 100vh;
+  width: 400px;
+  box-shadow: 0px 0px 17px 5px #8b907a;
+  border-radius: 5px;
+}
+
+.mehendi {
+  height: 95vh;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .intro{
+      height: 100vh;
+      width: 100%;
+      box-shadow: none;
+      border-radius: none;
+  }
+}
+
